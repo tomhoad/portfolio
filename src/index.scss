@@ -1,3 +1,5 @@
+@import "variables";
+
 @font-face {
   font-family: "PressuraRegular";
   src: url("./fonts/gt-pressura-regular-web-webfont.eot");
@@ -16,6 +18,15 @@
     url("./fonts/gt-pressura-light-web-webfont.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "PressuraBold";
+  src: url("./fonts/gt-pressura-bold-web-webfont.eot");
+  src: url("./fonts/gt-pressura-bold-web-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/gt-pressura-bold-web-webfont.woff") format("woff"),
+    url("./fonts/gt-pressura-bold-web-webfont.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -23,7 +34,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgba(250, 250, 250, 100);
+  background: $color-gray;
+  //overscroll-behavior-y: none;
 }
 
 code {

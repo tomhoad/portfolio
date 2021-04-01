@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "path": "times",
+      "headline": "The Times & The Sunday Times",
+      "intro": "The newspaper of record, and the only newspaper that can be quoted in an English court of law. Founded in 1785. How do you move such an institution into the digital age? By being part of a global, distributed team that embarks on a huge digital transformation project using cutting edge technologies.",
+      "role": "Senior Engineer",
+      "tech": "React, Flow, GraphQL (AWS AppSync), Serverless Framework",
+      "highlights": "Rolling out the new Channels pages, allowing for an increase in ad revenue and a richer user experience.",
+      "images": ["times.jpg"],
+      "color": "electricPink",
+      "link": "https://www.thetimes.co.uk"
+    },
+    {
+      "path": "local-discovery-engine",
+      "headline": "Local Opportunity with Google",
+      "intro": "Encouraging business owners to take advantage of their Google My Business listings and make the most of them.",
+      "role": "Lead Engineer, rehab",
+      "tech": "PolymerJS, Python",
+      "highlights": "Working alongside an A-Team consisting of Steve Hall, Andy Bridges, and Ryan Grieve - all wildly talented developers.",
+      "images": [],
+      "video": ["lde-video.mp4"],
+      "color": "electricGreen",
+      "link": "https://localopportunity.withgoogle.com"
+    },
+    {
+      "path": "learn-with-facebook",
+      "headline": "Learn With Facebook",
+      "intro": "Encouraging business owners to take advantage of their Google My Business listings and make the most of them.",
+      "role": "Lead Engineer, rehab",
+      "tech": "ReactJS, WordPress, JWTs",
+      "highlights": "Being involved from inception, through technical architecture and delivery, eventually leading front end development. Launching a multilingual site to 4 regions.",
+      "images": [],
+      "video": ["lde-video.mp4"],
+      "color": "electricBlue"
+    },
+    {
+      "path": "whisky-emoji",
+      "headline": "The Whisky Emoji",
+      "intro": "There wasn't a whisky emoji, so I made one.",
+      "role": "Producer, Havas Work Club",
+      "highlights": "Having my proposal accepted by Unicode and adopted by all manufacturers.",
+      "images": ["whisky.jpg"],
+      "color": "electricWatermelon",
+      "link": "https://www.unicode.org/L2/L2014/14298-whisky-emoji.pdf"
+    },
+
+    {
+      "path": "mclaren",
+      "headline": "McLaren Formula One",
+      "intro": "A mad idea to invent a zero-gravity whisky glass, brought to reality. Tested in the microgravity chamber at the University of Bremen, used by the European Space Agency.",
+      "role": "Producer, Havas Work Club",
+      "highlights": "Organising a shoot and taking the team to Germany to test the culmination of 18 months worth of research.",
+      "images": ["space.jpg", "space-2.jpg", "space-3.jpg"],
+      "color": "electricOrange",
+      "link": "https://www.unicode.org/L2/L2014/14298-whisky-emoji.pdf"
+    },
+    {
+      "path": "space-glass",
+      "headline": "Ballantine's Space Glass",
+      "intro": "A mad idea to invent a zero-gravity whisky glass, brought to reality. Tested in the microgravity chamber at the University of Bremen, used by the European Space Agency.",
+      "role": "Producer, Havas Work Club",
+      "highlights": "Organising a shoot and taking the team to Germany to test the culmination of 18 months worth of research.",
+      "images": ["space.jpg", "space-2.jpg", "space-3.jpg"],
+      "color": "electricOrange",
+      "link": "https://www.unicode.org/L2/L2014/14298-whisky-emoji.pdf"
+    }
+  ]
+}

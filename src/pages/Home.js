@@ -1,9 +1,13 @@
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useFetchProjects } from "../hooks/useFetchProjects";
+import classNames from "classnames";
 
 function Home() {
-  return (
+  const projects = useFetchProjects();
+
+  return projects ? (
     <div className="Home">
       <motion.div
         className="Header"
@@ -17,7 +21,7 @@ function Home() {
           duration: 1,
           ease: [0.16, 1, 0.3, 1],
           times: [0, 1],
-          delay: 0.5,
+          delay: 0.8,
         }}
         exit={{
           opacity: 0,
@@ -27,7 +31,7 @@ function Home() {
         }}
       >
         <Link to={"/about"}>About</Link>
-        <Link to={"/contact"}>Contact</Link>
+        <a href="mailto: tom@tomhoad.com">Contact</a>
       </motion.div>
       <motion.div
         initial={{
@@ -56,25 +60,19 @@ function Home() {
         </h1>
         <span className="Divider"></span>
         <ul className="Items">
-          <Link to={"/project/times"} className="Items__Item">
-            The Times &amp; The Sunday Times
-          </Link>
-          <Link to={"/project/times"} className="Items__Item">
-            Learn With Facebook
-          </Link>
-          <Link to={"/project/times"} className="Items__Item">
-            Local Opportunity With Google
-          </Link>
-          <Link to={"/project/times"} className="Items__Item">
-            Ballantine's Whisky
-          </Link>
-          <Link to={"/project/times"} className="Items__Item">
-            Sharp Electronics
-          </Link>
+          {projects.map((project) => (
+            <Link
+              key={project.path}
+              to={`/project/${project.path}`}
+              className={classNames("Items__Item", project.color)}
+            >
+              {project.headline}
+            </Link>
+          ))}
         </ul>
       </motion.div>
     </div>
-  );
+  ) : null;
 }
 
 export default Home;

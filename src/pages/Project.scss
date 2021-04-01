@@ -1,0 +1,139 @@
+@import "../variables";
+
+.box {
+  background: rgba(55, 55, 55, 100);
+  width: 100vw;
+  height: 100vh;
+}
+
+.Home__Wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.Background {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+.Overlay {
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "PressuraRegular", sans-serif;
+  color: $color-gray;
+  background: $color-white;
+
+  &.electricPink {
+    border-top: 5px solid $electricPink;
+  }
+
+  &.electricGreen {
+    border-top: 5px solid $electricGreen;
+  }
+
+  &.electricBlue {
+    border-top: 5px solid $electricBlue;
+  }
+
+  &.electricWatermelon {
+    border-top: 5px solid $electricWatermelon;
+  }
+
+  &.electricOrange {
+    border-top: 5px solid $electricOrange;
+  }
+}
+
+.Title {
+  font-weight: normal;
+  font-size: 3rem;
+  margin: 0 2rem 2rem;
+}
+
+.Text {
+  max-width: 600px;
+  font-size: 1.5rem;
+  margin: 5rem auto;
+
+  &__Wide {
+    max-width: 800px;
+  }
+}
+
+.Body {
+  padding: 0 2rem;
+  border-radius: 10px;
+  max-width: calc(100% - 4rem);
+  margin: 0 2rem;
+}
+
+.Image {
+  max-width: 100%;
+  &.electricPink {
+    box-shadow: 10px 10px 0 0 $electricPink;
+    border: 2px solid $electricPink;
+  }
+
+  &.electricGreen {
+    box-shadow: 10px 10px 0 0 $electricGreen;
+    border: 2px solid $electricGreen;
+  }
+
+  &.electricBlue {
+    box-shadow: 10px 10px 0 0 $electricBlue;
+    border: 2px solid $electricBlue;
+  }
+
+  &.electricWatermelon {
+    box-shadow: 10px 10px 0 0 $electricWatermelon;
+    border: 2px solid $electricWatermelon;
+  }
+
+  &.electricOrange {
+    box-shadow: 10px 10px 0 0 $electricOrange;
+    border: 2px solid $electricOrange;
+  }
+}
+
+.Project {
+  &__Intro {
+    margin: 3rem 0;
+  }
+
+  &__Panel {
+    display: flex;
+    width: 600px;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  &__Label {
+    min-width: 200px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__Info {
+    margin: 0;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.Gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

@@ -30,6 +30,26 @@ const About = () => {
           Back
         </Link>
         <h1 className="Title">About</h1>
+        <div className="Text Text__Wide">
+          <p>
+            An experienced, pragmatic, and highly-motivated Software Engineer
+            with 11 years experience spanning digital agencies, production
+            companies, and enterprise clients. I enjoy breaking down and
+            explaining complex technical problems for engineers and
+            non-engineers alike.
+          </p>
+          <p>
+            My software engineering background focuses mainly on modern
+            JavaScript and the surrounding ecosystem, in particular React. I am
+            currently stationed in the newsroom at The Times building scalable
+            tools for journalists to publish TheTimes.co.uk.
+            <p>
+              I have a particular interest in highly-polished user interface
+              design and build. I hold an MSc in Computer Science (Distinction)
+              from the University of London, Birkbeck.
+            </p>
+          </p>
+        </div>
       </motion.div>
     </>
   );
