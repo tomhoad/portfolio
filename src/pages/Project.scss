@@ -31,6 +31,7 @@
   font-family: "PressuraRegular", sans-serif;
   color: $color-gray;
   background: $color-white;
+  padding-bottom: 3rem;
 
   &.electricPink {
     border-top: 5px solid $electricPink;
@@ -51,12 +52,16 @@
   &.electricOrange {
     border-top: 5px solid $electricOrange;
   }
+
+  &.electricMint {
+    border-top: 5px solid $electricMint;
+  }
 }
 
 .Title {
   font-weight: normal;
   font-size: 3rem;
-  margin: 0 2rem 2rem;
+  margin: 0 2rem 3rem;
 }
 
 .Text {
@@ -66,18 +71,21 @@
 
   &__Wide {
     max-width: 800px;
+    margin: 3rem auto 0;
   }
 }
 
 .Body {
   padding: 0 2rem;
   border-radius: 10px;
-  max-width: calc(100% - 4rem);
   margin: 0 2rem;
+  width: 100%;
+  max-width: 900px;
 }
 
 .Image {
-  max-width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   &.electricPink {
     box-shadow: 10px 10px 0 0 $electricPink;
     border: 2px solid $electricPink;
@@ -101,6 +109,11 @@
   &.electricOrange {
     box-shadow: 10px 10px 0 0 $electricOrange;
     border: 2px solid $electricOrange;
+  }
+
+  &.electricMint {
+    box-shadow: 10px 10px 0 0 $electricMint;
+    border: 2px solid $electricMint;
   }
 }
 
@@ -136,4 +149,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: row;
+
+  &__Image {
+    max-width: calc(50% - 42px);
+    margin: 20px;
+    border: 1px solid #696969;
+  }
 }

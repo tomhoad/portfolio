@@ -26,13 +26,28 @@
     {
       "path": "learn-with-facebook",
       "headline": "Learn With Facebook",
-      "intro": "Encouraging business owners to take advantage of their Google My Business listings and make the most of them.",
+      "intro": "A interactive education portal, built upon React and WordPress, with the aim of training 1 million people and small businesses in the U.S. in digital skills by 2020. Since amalgamated into the Facebook Blueprint platform.",
       "role": "Lead Engineer, rehab",
       "tech": "ReactJS, WordPress, JWTs",
       "highlights": "Being involved from inception, through technical architecture and delivery, eventually leading front end development. Launching a multilingual site to 4 regions.",
-      "images": [],
-      "video": ["lde-video.mp4"],
-      "color": "electricBlue"
+      "images": ["fb.jpg", "fb-2.jpg", "fb-3.jpg", "fb-4.jpg"],
+      "color": "electricBlue",
+      "link": "https://fortune.com/2018/11/13/learn-with-facebook/"
+    },
+    {
+      "path": "mclaren",
+      "headline": "McLaren.com",
+      "intro": "2 seasons spent at one of the greatest Formula One teams in motorsport, including launches of the MP4-30 and MP4-31",
+      "role": "Technology PM, Havas Work Club",
+      "highlights": "Being responsible for the live telemetry feed to the website, served to thousands of online viewers.",
+      "images": [
+        "mclaren.jpg",
+        "mclaren-2.jpg",
+        "mclaren-3.jpg",
+        "mclaren-4.jpg"
+      ],
+      "color": "electricOrange",
+      "link": "https://www.mclaren.com"
     },
     {
       "path": "whisky-emoji",
@@ -44,17 +59,6 @@
       "color": "electricWatermelon",
       "link": "https://www.unicode.org/L2/L2014/14298-whisky-emoji.pdf"
     },
-
-    {
-      "path": "mclaren",
-      "headline": "McLaren Formula One",
-      "intro": "A mad idea to invent a zero-gravity whisky glass, brought to reality. Tested in the microgravity chamber at the University of Bremen, used by the European Space Agency.",
-      "role": "Producer, Havas Work Club",
-      "highlights": "Organising a shoot and taking the team to Germany to test the culmination of 18 months worth of research.",
-      "images": ["space.jpg", "space-2.jpg", "space-3.jpg"],
-      "color": "electricOrange",
-      "link": "https://www.unicode.org/L2/L2014/14298-whisky-emoji.pdf"
-    },
     {
       "path": "space-glass",
       "headline": "Ballantine's Space Glass",
@@ -62,8 +66,8 @@
       "role": "Producer, Havas Work Club",
       "highlights": "Organising a shoot and taking the team to Germany to test the culmination of 18 months worth of research.",
       "images": ["space.jpg", "space-2.jpg", "space-3.jpg"],
-      "color": "electricOrange",
-      "link": "https://www.unicode.org/L2/L2014/14298-whisky-emoji.pdf"
+      "color": "electricMint",
+      "link": "https://www.youtube.com/watch?v=xpIP9OTSBNw"
     }
   ]
 }

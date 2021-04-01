@@ -129,9 +129,8 @@ const Project = () => {
             {gallery &&
               gallery.map((image) => (
                 <img
-                  alt="things"
                   key={image}
-                  className={classNames("Image")}
+                  className={classNames("Gallery__Image")}
                   src={`${process.env.PUBLIC_URL}/assets/${image}`}
                 />
               ))}

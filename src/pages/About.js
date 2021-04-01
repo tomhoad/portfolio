@@ -30,7 +30,26 @@ const About = () => {
           Back
         </Link>
         <h1 className="Title">About</h1>
-        <div className="Text Text__Wide">
+        <motion.div
+          className="Text Text__Wide"
+          initial={{
+            y: "calc(100vh)",
+          }}
+          animate={{
+            y: "calc(0vh)",
+          }}
+          transition={{
+            duration: 1,
+            ease: [0.16, 1, 0.3, 1],
+            times: [0, 1],
+          }}
+          exit={{
+            opacity: 0,
+            transition: {
+              duration: 0.2,
+            },
+          }}
+        >
           <p>
             An experienced, pragmatic, and highly-motivated Software Engineer
             with 11 years experience spanning digital agencies, production
@@ -49,7 +68,7 @@ const About = () => {
               from the University of London, Birkbeck.
             </p>
           </p>
-        </div>
+        </motion.div>
       </motion.div>
     </>
   );
