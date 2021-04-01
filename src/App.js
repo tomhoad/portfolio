@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+
+import Home from "./pages/Home";
+import Project from "./pages/Project";
+import About from "./pages/About";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Route
+          render={({ location }) => (
+            <AnimatePresence initial={false} exitBeforeEnter>
+              <Switch location={location} key={location.pathname}>
+                <Route exact path="/" render={() => <Home />} />
+                <Route exact path="/project/:id" render={() => <Project />} />
+                <Route exact path="/about" render={() => <About />} />
+              </Switch>
+            </AnimatePresence>
+          )}
+        />
+      </Router>
     </div>
   );
 }

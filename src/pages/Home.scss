@@ -1,0 +1,54 @@
+.Divider {
+  border-bottom: 1px solid rgba(55, 55, 55, 100);
+  width: 100px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.Intro {
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: calc(100% - 3rem);
+  display: flex;
+  justify-content: space-between;
+}
+
+.Items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+
+  &__Item {
+    margin: 1rem 0;
+    text-align: center;
+    font-family: "PressuraRegular", sans-serif;
+    padding: 0 0.5rem;
+
+    &:hover {
+      background: rgba(55, 55, 55, 100);
+      color: rgba(250, 250, 250, 100);
+      transition: background 0.25s, color 0.25s;
+    }
+  }
+}

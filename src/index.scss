@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "PressuraRegular";
+  src: url("./fonts/gt-pressura-regular-web-webfont.eot");
+  src: url("./fonts/gt-pressura-regular-web-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/gt-pressura-regular-web-webfont.woff") format("woff"),
+    url("./fonts/gt-pressura-regular-web-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PressuraLight";
+  src: url("./fonts/gt-pressura-light-web-webfont.eot");
+  src: url("./fonts/gt-pressura-light-web-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/gt-pressura-light-web-webfont.woff") format("woff"),
+    url("./fonts/gt-pressura-light-web-webfont.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgba(250, 250, 250, 100);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
