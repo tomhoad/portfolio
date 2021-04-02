@@ -15,8 +15,6 @@ const Project = () => {
     const constructImageGallery = () => {
       if (!projectData || !projectData.images) return null;
 
-      console.log("gallery");
-
       const images = projectData.images.map((image) => image);
       const gallery = !hasVideo ? images.slice(1) : images;
 
@@ -127,9 +125,10 @@ const Project = () => {
           </div>
           <div className="Gallery">
             {gallery &&
-              gallery.map((image) => (
+              gallery.map((image, index) => (
                 <img
                   key={image}
+                  alt={`${projectData?.headline} ${index}`}
                   className={classNames("Gallery__Image")}
                   src={`${process.env.PUBLIC_URL}/assets/${image}`}
                 />

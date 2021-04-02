@@ -1,26 +1,7 @@
 @import "../variables";
 
-.box {
-  background: rgba(55, 55, 55, 100);
-  width: 100vw;
-  height: 100vh;
-}
-
-.Home__Wrapper {
-  position: absolute;
-  width: 100%;
-}
-
-.Background {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 0;
-}
-
 .Overlay {
-  width: 100vw;
+  width: calc(100vw - 2rem);
   min-height: 100vh;
   position: absolute;
   top: 0;
@@ -31,7 +12,12 @@
   font-family: "PressuraRegular", sans-serif;
   color: $color-gray;
   background: $color-white;
-  padding-bottom: 3rem;
+  padding: 2rem 1rem 3rem 1rem;
+
+  @media (min-width: 768px) {
+    width: calc(100vw - 4rem);
+    padding: 2rem 2rem 3rem 2rem;
+  }
 
   &.electricPink {
     border-top: 5px solid $electricPink;
@@ -61,31 +47,41 @@
 .Title {
   font-weight: normal;
   font-size: 3rem;
-  margin: 0 2rem 3rem;
+  margin: 2rem 0 3rem 0;
+  line-height: 3rem;
 }
 
 .Text {
   max-width: 600px;
   font-size: 1.5rem;
-  margin: 5rem auto;
+  margin: 2rem auto;
+
+  @media (min-width: 768px) {
+    margin: 5rem auto;
+  }
 
   &__Wide {
     max-width: 800px;
-    margin: 3rem auto 0;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      margin: 3rem auto 0;
+    }
   }
 }
 
 .Body {
-  padding: 0 2rem;
   border-radius: 10px;
-  margin: 0 2rem;
+  margin: 0 1rem;
   width: 100%;
   max-width: 900px;
 }
 
 .Image {
   max-width: 900px;
+  width: calc(100% - 10px);
   margin: 0 auto;
+
   &.electricPink {
     box-shadow: 10px 10px 0 0 $electricPink;
     border: 2px solid $electricPink;
@@ -124,19 +120,24 @@
 
   &__Panel {
     display: flex;
-    width: 600px;
     justify-content: flex-start;
     font-size: 1.2rem;
     margin: 1rem 0;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
   }
 
   &__Label {
-    min-width: 200px;
+    width: 100%;
     font-weight: bold;
     margin: 0;
   }
 
   &__Info {
+    width: 100%;
     margin: 0;
 
     a {
@@ -152,8 +153,13 @@
   flex-direction: row;
 
   &__Image {
-    max-width: calc(50% - 42px);
-    margin: 20px;
+    max-width: 100%;
+    margin: 1rem 0;
     border: 1px solid #696969;
+
+    @media (min-width: 768px) {
+      max-width: calc(50% - 42px);
+      margin: 20px;
+    }
   }
 }

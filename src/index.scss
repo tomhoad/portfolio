@@ -2,29 +2,17 @@
 
 @font-face {
   font-family: "PressuraRegular";
-  src: url("./fonts/gt-pressura-regular-web-webfont.eot");
-  src: url("./fonts/gt-pressura-regular-web-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/gt-pressura-regular-web-webfont.woff") format("woff"),
-    url("./fonts/gt-pressura-regular-web-webfont.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "PressuraLight";
-  src: url("./fonts/gt-pressura-light-web-webfont.eot");
-  src: url("./fonts/gt-pressura-light-web-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/gt-pressura-light-web-webfont.woff") format("woff"),
-    url("./fonts/gt-pressura-light-web-webfont.ttf") format("truetype");
+  src: url("./fonts/gt-pressura-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "PressuraBold";
-  src: url("./fonts/gt-pressura-bold-web-webfont.eot");
-  src: url("./fonts/gt-pressura-bold-web-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/gt-pressura-bold-web-webfont.woff") format("woff"),
-    url("./fonts/gt-pressura-bold-web-webfont.ttf") format("truetype");
+  src: url("./fonts/gt-pressura-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PressuraLight";
+  src: url("./fonts/gt-pressura-light.woff") format("woff");
 }
 
 body {
