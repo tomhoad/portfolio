@@ -37,11 +37,7 @@
   justify-content: space-between;
   color: $color-white;
   font-family: "Work Sans", serif;
-
-  &__Right {
-    display: flex;
-    align-items: center;
-  }
+  align-items: center;
 
   &__Item {
     transition: opacity 0.2s ease-in-out;
@@ -49,6 +45,9 @@
     &:hover {
       opacity: 0.7;
       transition: opacity 0.2s ease-in-out;
+    }
+    &.Left {
+      margin-right: auto;
     }
     &.Right {
       margin-left: 1rem;

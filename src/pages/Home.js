@@ -4,12 +4,18 @@ import { motion } from "framer-motion";
 import { useFetchProjects } from "../hooks/useFetchProjects";
 import classNames from "classnames";
 import { ReactComponent as GithubLogo } from "../GithubLogo.svg";
+import { Triangle } from "../Triangle";
+import { Square } from "../Square";
+import { Circle } from "../Circle";
 
 function Home() {
   const projects = useFetchProjects();
 
   return projects ? (
     <div className="Home">
+      <Triangle />
+      <Square />
+      <Circle />
       <motion.div
         className="Header"
         initial={{
@@ -34,19 +40,17 @@ function Home() {
         <Link className="Header__Item Left" to={"/about"}>
           About
         </Link>
-        <div className="Header__Right">
-          <a className="Header__Item Right" href="mailto: tom@tomhoad.com">
-            Contact
-          </a>
-          <a
-            className="Header__Item Right"
-            href="https://github.com/tomhoad"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GithubLogo />
-          </a>
-        </div>
+        <a className="Header__Item Right" href="mailto: tom@tomhoad.com">
+          Contact
+        </a>
+        <a
+          className="Header__Item Right"
+          href="https://github.com/tomhoad"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <GithubLogo />
+        </a>
       </motion.div>
       <motion.div
         initial={{
