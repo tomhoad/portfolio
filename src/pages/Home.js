@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useFetchProjects } from "../hooks/useFetchProjects";
 import classNames from "classnames";
 import { ReactComponent as GithubLogo } from "../GithubLogo.svg";
+import { ReactComponent as LinkedinLogo } from "../LinkedinLogo.svg";
+
 import { Triangle } from "../Triangle";
 import { Square } from "../Square";
 import { Circle } from "../Circle";
@@ -44,12 +46,20 @@ function Home() {
           Contact
         </a>
         <a
-          className="Header__Item Right"
+          className="Header__Item Right Github"
           href="https://github.com/tomhoad"
           target="_blank"
           rel="noreferrer"
         >
           <GithubLogo />
+        </a>
+        <a
+          className="Header__Item Right Github"
+          href="https://www.linkedin.com/in/tomhoad/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <LinkedinLogo />
         </a>
       </motion.div>
       <motion.div
