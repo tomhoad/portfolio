@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useFetchProjects } from "../hooks/useFetchProjects";
 import classNames from "classnames";
+import { ReactComponent as GithubLogo } from "../GithubLogo.svg";
 
 function Home() {
   const projects = useFetchProjects();
@@ -12,7 +13,7 @@ function Home() {
       <motion.div
         className="Header"
         initial={{
-          y: -50,
+          y: -100,
         }}
         animate={{
           y: 0,
@@ -21,7 +22,7 @@ function Home() {
           duration: 1,
           ease: [0.16, 1, 0.3, 1],
           times: [0, 1],
-          delay: 0.8,
+          delay: 1.25,
         }}
         exit={{
           opacity: 0,
@@ -30,20 +31,37 @@ function Home() {
           },
         }}
       >
-        <Link to={"/about"}>About</Link>
-        <a href="mailto: tom@tomhoad.com">Contact</a>
+        <Link className="Header__Item Left" to={"/about"}>
+          About
+        </Link>
+        <div className="Header__Right">
+          <a className="Header__Item Right" href="mailto: tom@tomhoad.com">
+            Contact
+          </a>
+          <a
+            className="Header__Item Right"
+            href="https://github.com/tomhoad"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GithubLogo />
+          </a>
+        </div>
       </motion.div>
       <motion.div
         initial={{
-          y: "calc(100vh)",
+          y: 50,
+          opacity: 0,
         }}
         animate={{
-          y: "calc(0vh)",
+          y: 0,
+          opacity: 1,
         }}
         transition={{
-          duration: 1,
+          duration: 1.5,
           ease: [0.16, 1, 0.3, 1],
           times: [0, 1],
+          delay: 0.25,
         }}
         exit={{
           opacity: 0,
@@ -58,7 +76,48 @@ function Home() {
           </Link>{" "}
           is a Software Engineer
         </h1>
-        <span className="Divider"></span>
+      </motion.div>
+      <motion.span
+        className="Divider"
+        initial={{
+          scaleX: 0,
+        }}
+        animate={{
+          scaleX: 1.5,
+        }}
+        transition={{
+          duration: 2,
+          ease: [0.16, 1, 0.3, 1],
+          delay: 0.75,
+        }}
+        exit={{
+          opacity: 0,
+          transition: {
+            duration: 0.4,
+          },
+        }}
+      />
+      <motion.div
+        initial={{
+          y: 50,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1.5,
+          ease: [0.16, 1, 0.3, 1],
+          delay: 0.5,
+        }}
+        exit={{
+          opacity: 0,
+          transition: {
+            duration: 0.4,
+          },
+        }}
+      >
         <ul className="Items">
           {projects.map((project) => (
             <Link

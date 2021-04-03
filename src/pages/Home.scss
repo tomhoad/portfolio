@@ -8,11 +8,11 @@
 }
 
 .Intro {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: normal;
   text-align: center;
-  margin-top: 0;
-  font-family: "PressuraLight", sans-serif;
+  margin: 0 0 1rem 0;
+  font-family: "Work Sans", serif;
   color: $color-white;
 
   @media (min-width: 768px) {
@@ -36,7 +36,24 @@
   display: flex;
   justify-content: space-between;
   color: $color-white;
-  font-family: "PressuraRegular", sans-serif;
+  font-family: "Work Sans", serif;
+
+  &__Right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__Item {
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.2s ease-in-out;
+    }
+    &.Right {
+      margin-left: 1rem;
+    }
+  }
 }
 
 .Items {
@@ -45,7 +62,7 @@
   align-items: center;
   flex-direction: column;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0;
   margin: 0;
 
@@ -56,7 +73,7 @@
   &__Item {
     margin: 1rem 0;
     text-align: center;
-    font-family: "PressuraBold", sans-serif;
+    font-family: "Work Sans", serif;
     padding: 0 0.5rem;
     color: $color-white;
     transition: background 0.25s, color 0.25s;

@@ -62,11 +62,11 @@ const About = () => {
             JavaScript and the surrounding ecosystem, in particular React. I am
             currently stationed in the newsroom at The Times building scalable
             tools for journalists to publish TheTimes.co.uk.
-            <p>
-              I have a particular interest in highly-polished user interface
-              design and build. I hold an MSc in Computer Science (Distinction)
-              from the University of London, Birkbeck.
-            </p>
+          </p>
+          <p>
+            I have a particular interest in highly-polished user interface
+            design and build. I hold an MSc in Computer Science (Distinction)
+            from the University of London, Birkbeck.
           </p>
         </motion.div>
       </motion.div>
