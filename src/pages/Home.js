@@ -42,7 +42,7 @@ function Home() {
         <Link className="Header__Item Left" to={"/about"}>
           About
         </Link>
-        <a className="Header__Item Right" href="mailto: tom@tomhoad.com">
+        <a className="Header__Item Right" href="mailto: t.hoad.88@gmail.com">
           Contact
         </a>
         <a
