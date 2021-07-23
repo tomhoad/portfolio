@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
-import App from "./App";
+import App from "./components/App";
 
 import(/* webpackPreload: true */ "./fonts/gt-pressura-bold.woff");
 import(/* webpackPreload: true */ "./fonts/gt-pressura-regular.woff");

@@ -2,9 +2,9 @@ import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-import Home from "./pages/Home";
-import Project from "./pages/Project";
-import About from "./pages/About";
+import Home from "../pages/Home";
+import Project from "../pages/Project";
+import About from "../pages/About";
 
 function App() {
   return (

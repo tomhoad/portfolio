@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useFetchProjects } from "../hooks/useFetchProjects";
 import classNames from "classnames";
-import { ReactComponent as GithubLogo } from "../GithubLogo.svg";
-import { ReactComponent as LinkedinLogo } from "../LinkedinLogo.svg";
+import { ReactComponent as GithubLogo } from "../assets/GithubLogo.svg";
+import { ReactComponent as LinkedinLogo } from "../assets/LinkedinLogo.svg";
 
-import { Triangle } from "../Triangle";
-import { Square } from "../Square";
-import { Circle } from "../Circle";
+import { Triangle } from "../components/Triangle";
+import { Square } from "../components/Square";
+import { Circle } from "../components/Circle";
 
 function Home() {
   const projects = useFetchProjects();
