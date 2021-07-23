@@ -1,7 +1,7 @@
-import { ReactComponent as TriangleSvg } from "./triangle.svg";
+import { ReactComponent as CircleSvg } from "../assets/circle.svg";
 import { motion } from "framer-motion";
 
-export function Triangle() {
+export function Circle() {
   return (
     <motion.div
       initial={{
@@ -24,20 +24,26 @@ export function Triangle() {
       }}
     >
       <motion.div
-        className="Shape Triangle"
+        key="circle"
+        className="Shape Circle"
         animate={{
-          translateY: ["0px", "-30px", "-30px", "0px"],
-          rotate: [30, 90, 360, 30],
-          scale: [1, 1.2, 1.3, 1],
+          translateY: ["-20px", "0px", "-10px", "-20px"],
+          scale: [1, 1.3, 1.3, 1],
         }}
         transition={{
-          duration: 25,
+          duration: 10,
           ease: "easeInOut",
-          times: [0, 0.25, 0.5, 1],
+          times: [0, 0.5, 0.7, 1],
           loop: Infinity,
         }}
+        exit={{
+          opacity: 0,
+          transition: {
+            duration: 0.3,
+          },
+        }}
       >
-        <TriangleSvg />
+        <CircleSvg />
       </motion.div>
     </motion.div>
   );
